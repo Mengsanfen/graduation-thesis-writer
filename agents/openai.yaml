@@ -1,0 +1,4 @@
+interface:
+  display_name: "Graduation Thesis Writer"
+  short_description: "Polished Markdown thesis from real code"
+  default_prompt: "Use this skill to audit my project code, reference thesis PDFs, screenshots, and docs, then produce a truthful, template-aligned, Word-convertible Markdown undergraduate thesis with draw.io-first diagram sources/placeholders, concise figure/table captions, and reviewer-style language polishing."
