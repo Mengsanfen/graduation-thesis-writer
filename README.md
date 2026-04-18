@@ -219,3 +219,34 @@ graduation-thesis-writer/
 - 若学校模板对标题、页眉页脚、目录、题注、参考文献格式有特殊要求，应以学校模板为最终排版依据。
 - 使用大模型或 AI Agent 相关主题时，应说明真实调用链、工具能力和系统边界，避免用空泛概念替代实现细节。
 
+## PlantUML MCP for Software Engineering UML
+
+Starting with this version, strict software-engineering UML diagrams should prefer PlantUML MCP instead of forcing every figure into draw.io. Use-case, activity, sequence, class, state, component, and deployment diagrams benefit from stable syntax, uniform linework, reproducible rendering, and source-controlled `.puml` files.
+
+- MCP server: <https://mcpservers.org/servers/github-com-infobip-plantuml-mcp-server>
+- Main tools: `generate_plantuml_diagram`, `encode_plantuml`, `decode_plantuml`
+- Recommended outputs: keep `.puml` source, `.png` image for Markdown/Word conversion, and `.svg` vector backup
+- Recommended directories: `thesis/plantuml/` or `docs/figures/plantuml/`
+- Word conversion advice: embed PNG in Markdown first, then replace with SVG or re-export from PlantUML when the final Word document needs sharper vector graphics
+
+Optional MCP startup when the local client and npm/network permissions allow it:
+
+```bash
+npx -y plantuml-mcp-server
+```
+
+Common environment variables:
+
+```text
+PLANTUML_SERVER_URL=https://www.plantuml.com/plantuml
+PLANTUML_ALLOWED_DIRS=/absolute/path/to/project
+```
+
+Example prompt:
+
+```text
+$graduation-thesis-writer
+Please rebuild all software-engineering UML figures in the thesis with PlantUML MCP, including `.puml` source files, PNG images, and SVG backups. In the requirement-analysis chapters, prioritize use-case, activity, and sequence diagrams. In the system-design chapters, prioritize class, component, deployment, and E-R diagrams. All diagrams must fit A4 Word pages and include captions.
+```
+
+draw.io remains useful for hand-polished architecture diagrams, data-flow diagrams, module overviews, and page-navigation diagrams. When the user explicitly requests draw.io or the figure needs complex manual layout, this skill may still use draw.io/diagrams.net.
