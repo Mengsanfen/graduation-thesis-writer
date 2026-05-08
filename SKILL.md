@@ -148,3 +148,41 @@ The final artifact should be one Markdown file in the user's target project dire
 Do not make the final body depend on raw Mermaid code blocks for major diagrams. If a diagram is visually important, long, renderer-sensitive, or likely to occupy too much vertical space, provide a PlantUML `.puml` source plus exported image path, or a draw.io source file and write the body as a formal figure placeholder with a caption.
 
 Do not auto-export Word, PDF, or other formats unless the user explicitly requests it.
+
+## Teacher-Review Hard Rules: Chinese Software Graduation Thesis
+
+When rewriting or generating a Chinese undergraduate software-engineering thesis after teacher review, apply these rules as hard constraints before style polish.
+
+### Abstract and Keywords
+- The abstract must show real workload: problem background, adopted method, completed system work, validation method, and conclusion boundary.
+- Do not make the abstract read like "called an API and built a page"; emphasize method and engineering process, not a pile of frameworks.
+- Keep Chinese keywords to five or fewer.
+
+### Chapter Logic
+- Use an 8-chapter structure when the advisor asks for it: Introduction, Related Technology, Feasibility Analysis, Requirement Analysis, System Design, System Implementation, System Testing, Summary.
+- Split research status into foreign research and domestic research.
+- Keep design and implementation separate: design chapters explain structure and rationale; implementation chapters explain code-level realization and data flow.
+- Do not write two consecutive chapters that are both essentially implementation.
+- Remove low-value standalone login tests unless the system contribution is authentication itself.
+
+### Source-Code Abstraction
+- Do not put source file names, low-level type names, or implementation nodes into the thesis body. Use abstract Chinese semantic names such as "会话应用服务", "智能编排组件", "路线生成工具".
+- If code-to-thesis mapping is useful, place it in an appendix table only.
+- Avoid phrases such as "根据项目实现", "该图有助于解释", "主要实现以下能力", "本文围绕……展开" in final thesis prose.
+
+### Figures and Tables
+- Every figure must have an introduction before it: use wording equivalent to "如图 X-X 所示" and explain why the figure appears.
+- Every figure must have a caption immediately after the image or placeholder.
+- Every table must have a table title and explanatory text before or after the table; never leave a heading followed only by a table.
+- For software-engineering UML figures, prefer PlantUML MCP or PlantUML-style sources. Use abstract Chinese labels, avoid source filenames, long node sentences, crossed edges, unexplained multiplicity marks, and oversized vertical chains.
+
+### References and Citations
+- Main references should be academic papers from CNKI, Wanfang, journal sites, IEEE, ACM, Elsevier, Springer, or arXiv papers with scholarly visibility.
+- Do not count official docs, framework manuals, platform pages, or project READMEs as main thesis references.
+- For typical Chinese undergraduate theses, prepare at least 30 academic references, with at least 10 Chinese references when the advisor requests it.
+- English literature should be discussed in Chinese in the body, while the reference list keeps the original English title.
+
+### Testing Chapter
+- Use black-box functional testing, exception testing, interface/screenshot verification, and performance test plans.
+- Do not fabricate response time, throughput, accuracy, or concurrency metrics without logs.
+- If performance data is unavailable, provide test indicators and recording method, not fake numbers or "待补充数据" wording.

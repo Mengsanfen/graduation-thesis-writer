@@ -84,3 +84,30 @@ Before final delivery, review like a strict but fair academic reviewer:
 - Action guide: Suggest concrete next edits, such as "补充第 8 章测试截图", "将图 5-1 导出为 SVG", or "统一 WebSocket/接口术语".
 
 Do not inflate severity to appear rigorous. If no material issue exists, say the section passes and mention only residual placeholders.
+
+## Advisor-Flagged AI-Sounding Blacklist
+
+Before final delivery, search and rewrite these phrases. They were explicitly criticized in a teacher-reviewed software thesis.
+
+- "根据项目实现" -> use direct evidence or remove the phrase.
+- "该图有助于解释" -> introduce the figure naturally before it appears.
+- "主要实现以下能力" in a design chapter -> use "该模块承担……职责" for design, or move to implementation.
+- "本文围绕……展开" when used as filler -> replace with concrete research content.
+- "后端核心类图围绕……展开" -> write what the object relationship means to the business.
+- "设计为什么会有实现" risk: never put implementation-flow wording inside a design subsection.
+- File names such as state graph scripts, Vue pages, request wrappers, or Python modules should not appear in main body prose.
+- Avoid explaining to the reader why a figure is helpful. State the design relationship, then place the figure.
+
+Preferred pattern for figures:
+
+1. Context sentence: "为说明智能规划请求在前端、会话服务和工具服务之间的传递关系，本文绘制时序图，如图 6-1 所示。"
+2. Figure.
+3. Caption: "图 6-1 智能对话时序图"
+4. Analysis paragraph: "由图 6-1 可知，……"
+
+Preferred pattern for implementation code:
+
+1. Explain the business situation.
+2. Insert a short code fragment only for the key control logic.
+3. Explain how the fragment supports the feature.
+4. Do not paste long source files.

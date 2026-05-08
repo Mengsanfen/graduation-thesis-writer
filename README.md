@@ -250,3 +250,15 @@ Please rebuild all software-engineering UML figures in the thesis with PlantUML 
 ```
 
 draw.io remains useful for hand-polished architecture diagrams, data-flow diagrams, module overviews, and page-navigation diagrams. When the user explicitly requests draw.io or the figure needs complex manual layout, this skill may still use draw.io/diagrams.net.
+
+## Advisor-Review Usage Notes
+
+For teacher-reviewed Chinese software theses, run the skill in this order:
+
+1. Audit the project code, database models, screenshots and reference thesis.
+2. Rewrite the abstract first, showing real workload rather than framework names.
+3. Rebuild the outline into clear analysis, design, implementation and testing chapters.
+4. Recreate UML figures with PlantUML-style sources and abstract Chinese labels.
+5. Add screenshot placeholders in the testing chapter for each user-visible core function.
+6. Rebuild references from academic papers; keep policies and laws separate if they are background evidence.
+7. Run the advisor-review gate in references/quality-checklist.md before delivery.

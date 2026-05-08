@@ -55,3 +55,22 @@
 - Appendix content does not expose secrets, API keys, or private credentials.
 - No automatic `.docx` export is performed unless explicitly requested.
 - Run a reviewer-style pass before delivery: separate must-fix truthfulness/logic/format issues from optional wording polish, and do not overclaim when evidence is absent.
+
+## Advisor-Review Gate
+
+Run this gate before delivering a Chinese software graduation thesis:
+
+- Abstract shows workload, method, validation and boundaries; it is not an API-call summary.
+- Keywords count is five or fewer.
+- Chapter 1.2 is split into foreign research and domestic research.
+- Chapter titles avoid unnecessary "与" and "和" stacking.
+- Feasibility includes technical, economic, operational, legal compliance, engineering ethics, data security, social health and sustainability when relevant.
+- Requirement analysis includes UML/use-case/activity/sequence diagrams inside the corresponding requirement subsections.
+- System design does not contain implementation-flow wording.
+- System implementation contains the concrete realization and may include a few short code fragments.
+- Testing chapter removes generic login-only tests unless authentication is a core contribution.
+- Every figure has prior introduction, image/source, caption and follow-up analysis.
+- Every table has title and explanation; testing tables follow software testing methods.
+- References contain at least 30 academic papers when required, including at least 10 Chinese papers when required.
+- Body prose contains no source file paths, no unexplained English type names, and no teacher-flagged AI phrases.
+- Policy and legal discussion names concrete laws and articles where possible, especially personal information, sensitive personal information, data security and tourism rights.
