@@ -188,3 +188,13 @@ When rewriting or generating a Chinese undergraduate software-engineering thesis
 - In final thesis prose, never expose audit phrases such as "材料未提供", "无依据结论", "待记录指标", "未形成压测报告", or "需在答辩前补充". Material gaps belong in an audit report, not in the deliverable thesis body. If metrics are unavailable, write a formal qualitative test result or test method without revealing the gap.
 
 - Final thesis body must not contain audit notes about unavailable screenshots, unavailable logs, missing materials, or lack of pressure-test data. Keep those notes outside the thesis or in a private delivery checklist.
+
+## Citation Order Rule
+
+For Chinese undergraduate theses that use numeric references, enforce sequential citation order:
+
+- Number references by first appearance in the thesis body, not by language category, topic, or alphabetic order.
+- If foreign research appears before domestic research, the foreign papers cited there must receive the earliest numbers.
+- Later chapters may reuse earlier numbers; repeated citations do not need to be monotonic.
+- Before delivery, scan the body before the reference list, ignore code blocks, expand ranges such as [18-21], and confirm first occurrence is [1], [2], [3] ... without jumps.
+- Keep uncited but retained background papers after the cited references, continuing the numbering sequence.
