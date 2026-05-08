@@ -60,7 +60,7 @@ Table rules:
 
 - Put table titles before tables if the school template does so; otherwise keep one consistent pattern throughout the thesis.
 - Use compact column names: "字段名", "类型", "约束", "含义"; "接口", "方法", "功能"; "测试项", "输入", "预期结果", "实际结果".
-- Do not put unsupported results in tables. Use "待补充" for missing test outcomes.
+- Do not put unsupported results in tables. In final thesis text, do not write "待补充" or expose missing-material wording; either provide a supported qualitative result, a formal test method, or move the gap note to a separate audit report for the user.
 - For English titles, use concise academic phrases such as "Comparison with", "Ablation study on", or "Results on" only when writing English papers. Chinese undergraduate theses normally use Chinese captions.
 
 ## Academic Architecture Diagrams
@@ -111,3 +111,5 @@ Preferred pattern for implementation code:
 2. Insert a short code fragment only for the key control logic.
 3. Explain how the fragment supports the feature.
 4. Do not paste long source files.
+
+- Final thesis body must not contain audit notes about unavailable screenshots, unavailable logs, missing materials, or lack of pressure-test data. Keep those notes outside the thesis or in a private delivery checklist.

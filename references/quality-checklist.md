@@ -74,3 +74,5 @@ Run this gate before delivering a Chinese software graduation thesis:
 - References contain at least 30 academic papers when required, including at least 10 Chinese papers when required.
 - Body prose contains no source file paths, no unexplained English type names, and no teacher-flagged AI phrases.
 - Policy and legal discussion names concrete laws and articles where possible, especially personal information, sensitive personal information, data security and tourism rights.
+
+- Final thesis body must not contain audit notes about unavailable screenshots, unavailable logs, missing materials, or lack of pressure-test data. Keep those notes outside the thesis or in a private delivery checklist.

@@ -185,4 +185,6 @@ When rewriting or generating a Chinese undergraduate software-engineering thesis
 ### Testing Chapter
 - Use black-box functional testing, exception testing, interface/screenshot verification, and performance test plans.
 - Do not fabricate response time, throughput, accuracy, or concurrency metrics without logs.
-- If performance data is unavailable, provide test indicators and recording method, not fake numbers or "待补充数据" wording.
+- In final thesis prose, never expose audit phrases such as "材料未提供", "无依据结论", "待记录指标", "未形成压测报告", or "需在答辩前补充". Material gaps belong in an audit report, not in the deliverable thesis body. If metrics are unavailable, write a formal qualitative test result or test method without revealing the gap.
+
+- Final thesis body must not contain audit notes about unavailable screenshots, unavailable logs, missing materials, or lack of pressure-test data. Keep those notes outside the thesis or in a private delivery checklist.
