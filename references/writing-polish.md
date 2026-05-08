@@ -113,3 +113,15 @@ Preferred pattern for implementation code:
 4. Do not paste long source files.
 
 - Final thesis body must not contain audit notes about unavailable screenshots, unavailable logs, missing materials, or lack of pressure-test data. Keep those notes outside the thesis or in a private delivery checklist.
+
+## Academic Abstraction Rule
+
+For "design and implementation" undergraduate theses, do not let the paper read like a project introduction, product manual, or feature list.
+
+- Start from the research problem, task abstraction, constraints, design principles, mechanism model, and verification logic.
+- Replace product-manual wording such as "用户可以", "系统提供", "页面展示", "功能包括" with academic wording such as "任务链路", "状态转换", "职责边界", "约束建模", "机制设计", "验证维度".
+- Requirements chapters should analyze input characteristics, state characteristics, output characteristics, role boundaries, and constraint conditions, not merely list operations.
+- Design chapters should explain why a structure is chosen: generation/execution separation, state-driven orchestration, traceable data, maintainable boundaries, security constraints.
+- Implementation chapters may mention concrete modules, but each module must be tied to a mechanism: event stream, data transformation, consistency, fallback, persistence, or permission boundary.
+- Testing chapters should verify design claims and task-state transitions, not read like a user acceptance checklist.
+- Keep necessary software-engineering terms such as function, module, page, and interface only when they are part of formal analysis; avoid piling them into descriptive feature lists.
