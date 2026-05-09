@@ -113,3 +113,15 @@ Mermaid can be used internally to reason about simple structure, but it should n
 ## Major Diagram Placeholder
 
 For major diagrams, create or reference a `.puml`, `.png`, `.svg`, or `.drawio` file instead of leaving the body as Mermaid-only.
+
+## Reference DOCX Structure and Black-White UML Rule
+
+When a user provides a reference thesis in DOCX form, extract style patterns rather than project facts:
+
+- Learn chapter organization, heading depth, chapter-summary placement, figure/table density, caption style, and testing-section layout.
+- Do not copy the reference project domain, modules, data, results, or references into the target thesis.
+- For traditional software-engineering theses, prefer adding chapter summaries such as "本章总结" and a "论文结构" section when the reference template uses them.
+- Requirement analysis should contain dense but relevant software-engineering diagrams: use-case, sequence, activity, state, class/interface or data-analysis diagrams as appropriate.
+- Design chapters should follow the common order: architecture, function/module structure, database design, component/field/object design, deployment or navigation design.
+- For UML and software-engineering diagrams intended for Word, default to black-white professional line art: white background, black borders, black arrows, no gradient, no pastel module fills, no decorative icons, and compact A4-friendly layout.
+- Keep color only when the user or school template explicitly requires it; otherwise black-white diagrams are safer for printing, review, and thesis formatting.
